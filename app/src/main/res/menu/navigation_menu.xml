@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/services"
+        android:title="Services"
+        app:showAsAction="always|withText">
+        <menu>
+            <item android:id="@+id/bound_service"
+                android:title="Bound Service"/>
+            <item android:id="@+id/un_bind_service"
+                android:title="Un Bound Service"/>
+            <item android:id="@+id/intent_service"
+                android:title="Intent Service"/>
+        </menu>
+    </item>
+    <item
+        android:id="@+id/aidl"
+        android:title="ADIL"/>
+    <item android:id="@+id/messanger"
+        android:title="Messanger"/>
+    <item android:id="@+id/job_service"
+        android:title="Job Service"/>
+    <item android:id="@+id/work_manager"
+        android:title="Work Manager"/>
+</menu>
