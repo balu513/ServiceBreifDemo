@@ -1,11 +1,17 @@
 package com.balu.servicebreifdemo;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
 
+import com.balu.servicebreifdemo.ui.AIDLActivity;
+import com.balu.servicebreifdemo.ui.BindServiceActivity;
+import com.balu.servicebreifdemo.ui.IntentServiceActivity;
 import com.balu.servicebreifdemo.ui.JobServiceFragment;
+import com.balu.servicebreifdemo.ui.MessangerActivity;
+import com.balu.servicebreifdemo.ui.StartServiceActivity;
 import com.balu.servicebreifdemo.ui.WorkManagerFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationView;
@@ -48,14 +54,19 @@ public class MainActivity extends AppCompatActivity {
                 switch(id)
                 {
                     case R.id.bound_service:
+                        startActivity(new Intent(MainActivity.this, BindServiceActivity.class));
                         break;
                     case R.id.un_bind_service:
+                        startActivity(new Intent(MainActivity.this, StartServiceActivity.class));
                         break;
                     case R.id.intent_service:
+                         startActivity(new Intent(MainActivity.this, IntentServiceActivity.class));
                         break;
                     case R.id.messanger:
+                        startActivity(new Intent(MainActivity.this, MessangerActivity.class));
                         break;
                     case R.id.aidl:
+                        startActivity(new Intent(MainActivity.this, AIDLActivity.class));
                         break;
                     case R.id.job_service:
                        launchFragment(null,new JobServiceFragment());
